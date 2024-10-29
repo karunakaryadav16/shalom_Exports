@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1; /* Adjust line-height for better text spacing */
+}
+
+/* Navbar container styles */
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(255, 165, 0);
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-rainbow-coloured-flowing-lines-design_1048-12805.jpg?w=1380&t=st=1728054465~exp=1728055065~hmac=4dafb1805829f45bed7f65091ec94389befcdef2db5915d7a80836dcf5e6b502');
+    color: white;
+    border-radius: 20px;
+}
+
+/* Navbar brand styles */
+.navbar_brand h1 {
+    margin: 0;
+    font-size: clamp(24px, 4vw, 48px);
+    white-space: nowrap; /* Responsive font size */
+}
+
+.navbar_brand span {
+    font-size: clamp(14px, 2vw, 24px); /* Responsive font size */
+    color: #ccc;
+}
+
+/* Navbar links */
+.navbar_links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.navbar_links span {
+    cursor: pointer;
+    font-size: clamp(16px, 2vw, 24px); /* Responsive font size */
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: clamp(24px, 3vw, 36px); /* Responsive icon size */
+}
+
+/* Gradient text styles */
+.gradient_text {
+    font-size: clamp(24px, 4vw, 48px); /* Responsive font size */
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(34, 139, 34), rgb(70, 130, 180), rgb(255, 99, 71));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient_subtext {
+    font-size: clamp(16px, 2vw, 24px); /* Responsive font size */
+    background: linear-gradient(to right, rgb(255, 165, 0), rgb(0, 191, 255), rgb(60, 179, 113));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile styles */
+@media (max-width: 920px) {
+    .navbar_links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .navbar_links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Styles for large screens (e.g., TVs and projectors) */
+@media (min-width: 1920px) { /* Full HD */
+    .navbar_container {
+        padding: 20px 40px; /* Increase padding */
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(30px, 5vw, 60px); /* Larger font for TVs */
+    }
+
+    .navbar_brand span {
+        font-size: clamp(16px, 3vw, 28px); /* Adjust subtext font size */
+    }
+
+    .navbar_links span {
+        font-size: clamp(18px, 2.5vw, 30px); /* Adjust links font size */
+    }
+}
+
+@media (min-width: 3840px) { /* 4K resolution */
+    .navbar_container {
+        padding: 30px 60px; /* Further increase padding */
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(36px, 6vw, 80px); /* Adjust for large screens */
+    }
+
+    .navbar_brand span {
+        font-size: clamp(20px, 3.5vw, 36px); /* Larger subtext font */
+    }
+
+    .navbar_links span {
+        font-size: clamp(22px, 3vw, 40px); /* Larger links font */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar container */
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ff8c00; /* Vibrant orange for branding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Branding */
+.navbar_brand h1 {
+    font-size: clamp(28px, 5vw, 60px);
+    font-weight: bold;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.navbar_brand span {
+    font-size: clamp(16px, 3vw, 28px);
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
+/* Navbar links */
+.navbar_links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav_item:hover {
+    color: #d1d1d1; /* Soft hover effect */
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 920px) {
+    .navbar_links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Gradient text */
+.gradient_text {
+    background: linear-gradient(to right, #228b22, #4682b4, #ff6347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient_subtext {
+    background: linear-gradient(to right, #ff8c00, #00bfff, #3cb371);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Offcanvas menu */
+.offcanvas_link {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.offcanvas_link:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1920px) {
+    .navbar_container {
+        padding: 20px 40px;
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(36px, 5vw, 80px);
+    }
+
+    .navbar_brand span {
+        font-size: clamp(18px, 3vw, 36px);
+    }
+
+    .nav_item {
+        font-size: clamp(20px, 2vw, 30px);
+    }
+}
+
+/* Media query for 4K resolution */
+@media (min-width: 3840px) {
+    .navbar_container {
+        padding: 30px 60px;
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(40px, 6vw, 100px);
+    }
+
+    .navbar_brand span {
+        font-size: clamp(22px, 3.5vw, 40px);
+    }
+
+    .nav_item {
+        font-size: clamp(22px, 3vw, 40px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5; /* Better text spacing for readability */
+}
+
+/* Navbar container styles */
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+   
+    background: linear-gradient(to bottom right, rgba(0, 123, 255, 0.5), rgba(255, 215, 0, 0.5)), url('path-to-background-image.jpg') no-repeat center center;
+    
+   
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: white;
+    /* border-radius: 15px; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Navbar brand styles */
+.navbar_brand h1 {
+    margin: 0;
+    font-size: clamp(28px, 5vw, 50px);
+    color: #ffffff; /* White for clear contrast */
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); /* Add depth to the brand text */
+}
+
+.navbar_brand span {
+    font-size: clamp(16px, 3vw, 24px);
+    color: rgba(255, 255, 255, 0.8); /* Softer white tone for subtext */
+}
+
+/* Navbar links */
+.navbar_links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_links a {
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar_links a:hover {
+    color: #FFD700; /* Gold for a sense of luxury */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: clamp(24px, 3vw, 36px); 
+    color: white;
+}
+
+/* Offcanvas Styles */
+.offcanvas-header {
+    background-color: #0F52BA; /* Same as navbar */
+    color: white;
+}
+
+.offcanvas-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.offcanvas-body {
+    background-color: #F0F8FF; /* Light blue for contrast */
+}
+
+.offcanvas-body a {
+    color: #0F52BA; /* Deep blue links */
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.offcanvas-body a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+
+/* Gradient text styles */
+.gradient_text {
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: bold;
+    background: linear-gradient(to right, #FF4500, #FFD700, #32CD32); /* Warm and vibrant */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient_subtext {
+    font-size: clamp(16px, 2vw, 24px);
+    background: linear-gradient(to right, #ADD8E6, #00CED1, #4682B4); /* Softer complementary colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Mobile styles */
+@media (max-width: 920px) {
+    .navbar_links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Styles for large screens (e.g., TVs and projectors) */
+@media (min-width: 1920px) {
+    .navbar_container {
+        padding: 20px 50px;
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(36px, 6vw, 72px);
+    }
+
+    .navbar_links a {
+        font-size: clamp(20px, 2.5vw, 30px);
+    }
+}
+
+@media (min-width: 3840px) {
+    .navbar_container {
+        padding: 30px 70px;
+    }
+
+    .navbar_brand h1 {
+        font-size: clamp(48px, 7vw, 90px);
+    }
+
+    .navbar_links a {
+        font-size: clamp(24px, 3vw, 36px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
