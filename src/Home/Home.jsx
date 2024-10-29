@@ -60,38 +60,6 @@ function Home() {
 
 
 
-{/* 
-
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="500">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://fess.su/image/blog/1_b.jpg" alt="First slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://growbiz.fiu.edu/wp-content/uploads/2021/02/exporting_shutterstock--scaled.jpg" alt="Second slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://c8.alamy.com/comp/2C5284E/road-transport-of-goods-by-truck-trade-and-logistics-2C5284E.jpg" alt="Third slide"/>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
- */}
 
 
 
@@ -110,7 +78,7 @@ function Home() {
         <div className="profile_content">
           {/* Left Side Image */}
           <div className="image_container">
-            {/* <img src="https://th.bing.com/th/id/OIP.C0bqhs58eAWLTE5OPO1OYQHaE4?w=2000&h=1317&rs=1&pid=ImgDetMain" alt="Profile" /> */}
+          
           
           <img src="https://img.freepik.com/free-photo/technological-futuristic-holograms-logistics-means-transport_23-2151663057.jpg?t=st=1730190577~exp=1730194177~hmac=39be41964d1109d2bd3e7067e41905c3d8c7d95e4a8c75acb0cb8e9708aa9112&w=2000"/>
           </div>
