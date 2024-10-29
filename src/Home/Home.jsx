@@ -3,10 +3,6 @@ import './Home.css';
 import Navbar from '../Navbar/Navbar';
 import AOS from 'aos';
 import { Helmet } from 'react-helmet';
-// import 'aos/dist/aos.css';
-// import 'antd/dist/antd.css';
-// // import 'antd/es/carousel/style/css'; // For Carousel specific styles
-// import 'antd/dist/antd.css'; // Global styles (may still be needed)
 
 import { Carousel } from 'antd';
 
