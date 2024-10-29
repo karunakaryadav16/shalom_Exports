@@ -14,25 +14,6 @@ function Home() {
   }, []);
 
 
-  const contentStyle = {
-    height: '20px',
-    width:"100%",
-    objectFit: 'fill',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-    
-  };
-  const contentStyle2 = {
-    height: '100%',
-    width:"100%",
-    objectFit: 'fill',
-    color: '#fff',
-  
-    background: '#364d79',
-    
-  };
 
 
 
